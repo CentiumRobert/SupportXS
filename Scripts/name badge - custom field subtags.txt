@@ -1,0 +1,16 @@
+private void calculatedField4_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e) {
+	  dynamic rowData = e.Row; 
+	  dynamic custom = rowData.Contact.CustomFields;  
+	
+		  foreach (var tag in custom) 
+		  {
+		    if (tag.Name == "opn keynote_gst") {
+			dynamic val = tag.Values;
+			  foreach (var tagVal in val) 
+			  {
+			    if (tagVal.GetValue == "Opening Keynote & Luncheon") {
+		      e.Value = "YES";
+		    }
+		  }
+		}
+	}

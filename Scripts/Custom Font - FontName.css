@@ -1,0 +1,49 @@
+/* Interactive Sites */
+
+@import url('FontURL');
+
+html, body, * {
+
+  font-family: 'FontName', sans-serif !important;
+
+}
+
+.h1,.h2,.h3,.h4,.h5,.h6{
+
+  font-family: 'FontName', sans-serif !important;
+
+}
+
+/* Attendee App */
+
+.x-button.x-button-back .x-button-label, .x-button.x-button-back .x-badge {
+
+  font-family: 'FontName', sans-serif !important;
+
+}
+
+.x-button-normal .x-button-label, .x-button-normal .x-badge, .x-button-round .x-button-label, .x-button-round .x-badge, .x-button-small .x-button-label, .x-button-small .x-badge, .x-button-forward .x-button-label, .x-button-forward .x-badge{
+
+  font-family: 'FontName', sans-serif !important;
+
+}
+
+.x-msgbox .x-msgbox-buttons .x-toolbar-inner .x-button .x-button-label, .x-msgbox .x-msgbox-buttons .x-toolbar-inner .x-button .x-badge{
+
+  font-family: 'FontName', sans-serif !important;
+
+}
+
+/* Restore Font for Icons */
+
+.fa {
+
+  font-family: 'FontAwesome' !important;
+
+}
+
+.glyphicon {
+
+  font-family: 'Glyphicons Halflings' !important;
+
+}

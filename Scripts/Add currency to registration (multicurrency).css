@@ -1,0 +1,8 @@
+.text-right::before {
+  content: " $";
+margin-right: -63px;
+}
+
+.col-xs-3.text-right.col-xs-offset-4 span{
+margin-left: 12px;
+}

@@ -1,0 +1,3 @@
+[Registration.Contact.Id] + '-' + Upper(Substring([Registration.Contact.Guid], 30))
+
+/* Change the Contact.id and Contact.Guid to suit the type of report or name badge */

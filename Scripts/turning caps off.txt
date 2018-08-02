@@ -1,0 +1,8 @@
+<script>
+$(window).load(function(){
+  $('input[name="Name"]').off()
+  $('input[name="LastName"]').off()
+  $('input[name="Organization"]').off()
+  $('input[name="Position"]').off()
+}
+</script>

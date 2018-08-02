@@ -1,0 +1,4 @@
+Add the following code to the Invoice and Payment inside <style> tags
+
+a.btn.btn-default.btn-sm.invoice-option-button{
+ display:none;

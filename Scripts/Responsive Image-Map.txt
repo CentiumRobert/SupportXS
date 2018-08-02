@@ -1,0 +1,33 @@
+//Image
+<style>.responsive {
+
+    width: 100%;
+
+    height: auto;
+
+}</style>
+
+<img class="img-responsive" alt="Responsive image" src="
+
+
+
+
+//Google Maps
+<style>
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}</style>
+
+<div class="map-responsive">
+<iframe height="600" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.6188819571544!2d153.02456041505647!3d-27.44998588289931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9159ef7da80123%3A0x612ca206e9bc7b3d!2s309+Herston+Rd%2C+Herston+QLD+4006!5e0!3m2!1sen!2sau!4v1526962318053" frameborder="0" width="600" allowfullscreen=""></iframe>
+</div>

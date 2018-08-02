@@ -1,0 +1,4 @@
+.text-right::before {
+  content: " $";
+margin-right: -4px;
+}

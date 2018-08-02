@@ -1,0 +1,45 @@
+<div class="is-section is-section-auto is-box is-bg-grey">
+
+        <div class="is-boxes  is-boxes-header">
+
+            <div class="is-box-centered">
+                <div class="is-builder container-fluid" id="contentareaQvXguw9" style=""><div class="row">
+
+		<div style="padding-right: 0px;padding-left: 0px;" class="col-md-12">
+
+            <img class="the-width" style="margin: 0em;" src="https://az659834.vo.msecnd.net/eventsairaueprod/production-cievents-public/ae573f4e8ec34b34b6ab84327a03a460" alt="">
+
+        </div>
+
+	</div></div>
+            </div>
+
+        </div>
+    
+    </div>
+
+
+
+
+.container-fluid > .row, .container-fluid > div > .row {
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+.is-boxes-header {
+min-height: 0px !important;
+}
+
+.the-width {
+	width:100%;
+}
+
+.center-headertext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 100%;
+    text-align: center;
+	color:#fff !important;
+}

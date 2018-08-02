@@ -1,0 +1,23 @@
+<script>
+function waitFor(e) {
+    "undefined" != typeof jQuery ? e() : setTimeout(function() {
+        waitFor(e)
+    }, 50)
+}
+waitFor(function() {
+    window.onload = function() {
+        setInterval(function() {
+            if ($("[name='cardType']").length > 0) {
+                var list = $("[name='cardType']")
+                var wanted = ['', 'American Express', 'Visa', 'MasterCard']
+
+                list.children().each(function(i, val) {
+                    var text = $(val).text()
+                    if (wanted.indexOf(text) < 0)
+                        $(val).remove()
+                });
+            }
+        }, 500);
+    }
+})
+</script>

@@ -1,0 +1,5 @@
+Add the following code to the Invoice and Payment inside <style> tags
+
+[onclick*="invoiceModule.createInvoice()"] {
+  display: none;
+}

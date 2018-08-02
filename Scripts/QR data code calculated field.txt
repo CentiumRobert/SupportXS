@@ -1,0 +1,23 @@
+to add QR code data
+
+Add new Calculated field in Contact name&address report under contact.
+
+Edit expression 
+
+go to Field and search for ID
+
+insert 
+[ID] + ',' + [GuID] + ',' + [EventID]
+
+and save
+this will generate QR data code.
+
+To add in the report say Attendee Information sheet
+
+Drag "Barcode" from left hand panel to builder
+
+Add Calculated Field and insert the above script in it -- follow instructions
+
+Expand the QR code box in report builder Click the little arrow ">" change it to QR Code and change Data Binding to "calculated field which you have created for QR code"
+
+Now go to Property grid and click on Sumbology drop down arrow and change Compaction to "Byte" 

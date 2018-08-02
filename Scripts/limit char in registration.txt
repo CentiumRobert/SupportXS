@@ -1,0 +1,5 @@
+<script>
+$('[name*="FirstName"]').attr('maxlength','6')
+$('[name*="LastName"]').attr('maxlength','6')
+$('[name*="Organization"]').attr('maxlength','6')
+</script>

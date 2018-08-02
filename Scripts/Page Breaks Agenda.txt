@@ -1,0 +1,7 @@
+<style>
+body > div > div > div:nth-child(7) > div > div,
+.row .col-sm-8:nth-child(3) > .marginBottom,
+.marginBottom > .table tr > td a {
+  white-space: pre-line;
+}
+</style>

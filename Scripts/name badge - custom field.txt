@@ -1,0 +1,14 @@
+private void StateAbb_GetValue(object sender, DevExpress.XtraReports.UI.GetValueEventArgs e) {
+	  dynamic rowData = e.Row; 
+	  dynamic custom = rowData.Contact.CustomFields;  
+	
+		  foreach (var tag in custom) 
+		  {
+		    if (tag.Name == "State Abriviation") {
+			dynamic val = tag.Values;
+			  foreach (var tagVal in val) 
+			  {
+			  e.Value = tagVal.GetValue;
+		    }      
+		}
+	}

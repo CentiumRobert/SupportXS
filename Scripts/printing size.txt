@@ -1,0 +1,44 @@
+//An example of calling the AutoscaleControlText method in the BeforePrint event of a control.
+private void label1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+//Put in the default font size here, in this case 12. 
+//The default size is whatever you want the font size to be when the text does not overlap control boundaries.
+AutoscaleControlText((XRControl)sender,12);
+}
+ 
+///////////////////////////////////////////////////////////////////////////////////////
+//Methods that implement the resizing behaviour. These do not change
+ 
+//Autoscale the control text
+public static void AutoscaleControlText(XRControl control, int defaultSize)
+{
+float controlWidth = control.SizeF.Width;
+//Set default size first, otherwise font used could be the reduced size of previous 'rows' control
+control.Font = new Font(control.Font.FontFamily, defaultSize, control.Font.Style);
+//Will only reduce the font size of length of text is greater than the width of control
+while (MeasureTextWidthPixels(((XtraReport)control.Report.Report).ReportUnit, control.Text, control.Font) > controlWidth)
+control.Font = new Font(control.Font.FontFamily, control.Font.Size - 0.1f, control.Font.Style);
+}
+ 
+//Method used by AutoscaleControlText
+public static float MeasureTextWidthPixels(ReportUnit unit, string text, Font font)
+{
+Graphics gr = Graphics.FromHwnd(IntPtr.Zero);
+ 
+int factor;
+if (unit == ReportUnit.HundredthsOfAnInch)
+{
+gr.PageUnit = GraphicsUnit.Inch;
+factor = 100;
+}
+else
+{
+gr.PageUnit = GraphicsUnit.Millimeter;
+factor = 10;
+}
+ 
+SizeF size = gr.MeasureString(text, font);
+gr.Dispose();
+ 
+float s = size.Width * factor;
+return s;
+}

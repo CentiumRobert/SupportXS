@@ -1,0 +1,3 @@
+Copy the following into CMD and run:
+
+net use S: \\CSFile\Support\EventsAIR
